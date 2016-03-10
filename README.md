@@ -129,4 +129,4 @@ angular.module('notificationApp')
 $ bower install
 $ npm install
 $ ionic run ios
-``
+```
