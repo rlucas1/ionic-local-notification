@@ -1,11 +1,24 @@
-## Notification application
+# Notification application
+
+
+## Try notification by launching app on iOS
 ```
   $ npm install -g ionic cordova
+  $ ionic plugin add https://github.com/katzer/cordova-plugin-local-notifications.git
+  $ bower install
+  $ npm install
+  $ ionic run ios
+```
+
+## To create this app yourself, follow those steps
+### Application configuration
+#### Step 1 create an empty app
+
+```
   $ ionic start notificationApp blank
 ```
 
-## Application configuration
-### Step1 adding platform
+#### Step 2 adding platform
 
 * add ios platform 
   
@@ -21,7 +34,7 @@
 ```  
 
 
-### Step 2 plugin configuraiton
+#### Step 3 plugin configuraiton
 
 * install ng-cordova : 
 
@@ -42,7 +55,7 @@
 ```
 
 
-### Step 3 application configuration
+#### Step 3 application configuration
 
 * add cordova plugin to your ionic app. Open app.js, and change following line 
 
@@ -68,7 +81,7 @@ angular.module('starter', ['ionic','ngCordova'])
 Your app is now configured.
 
 
-## Creating our first notification
+### Creating our first notification
 
 1 - Create your controller in www/js/cntroller/controller-notification.js:
 
@@ -110,10 +123,10 @@ angular.module('notificationApp')
   </ion-content>
 ```
 
-## Lauching your app
+### Lauching your app
 
 ```
 $ bower install
 $ npm install
 $ ionic run ios
-```
+``
