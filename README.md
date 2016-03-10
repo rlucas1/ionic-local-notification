@@ -14,7 +14,7 @@
 ### Application configuration
 #### Step 1 create an empty app
 
-```
+```bash
   $ ionic start notificationApp blank
 ```
 
@@ -22,14 +22,14 @@
 
 * add ios platform 
   
-```
+```bash
   $ ionic platform add ios
   $ npm install -g ios-sim
 ```
 
 * add android platform 
 
-```
+```bash
   $ ionic platform add android
 ```  
 
@@ -38,7 +38,7 @@
 
 * install ng-cordova : 
 
-```
+```bash
   $ bower install ngCordova --save
 ```
 
@@ -50,7 +50,7 @@
 
 * install local notificaiton plugin : 
 
-```
+```bash
   $ ionic plugin add https://github.com/katzer/cordova-plugin-local-notifications.git
 ```
 
@@ -112,7 +112,7 @@ angular.module('notificationApp')
 
 2 - Replace ```<ion-content></ion-content>``` by :
 
-```
+```html
   <ion-content ng-controller="notificationController">
     <h3>Notification app</h3>
     <div class="row">
@@ -125,7 +125,7 @@ angular.module('notificationApp')
 
 ### Lauching your app
 
-```
+```bash
 $ bower install
 $ npm install
 $ ionic run ios
